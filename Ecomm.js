@@ -5,9 +5,6 @@ cart.addEventListener("click", function() {
     document.querySelector(".container").innerHTML = "";
     document.querySelector("body").innerHTML = '<a class="empty" href="">Cart is Empty</a>';
 });
-<script>
-    
-</script>
 
 shopCard.forEach(function(card) {
     card.addEventListener("click", function() {
@@ -23,7 +20,7 @@ shopCard.forEach(function(card) {
                 <p>Discover the latest trends and enjoy up to 50% off on our new arrivals. Don't miss out on these exclusive deals!</p>
                 <p>High-quality materials and the latest fashion designs to keep you stylish and comfortable.</p>
                 <p>Available in multiple sizes and colors to fit your unique style.</p>
-                <p>Free shipping on orders over $50. Shop now and elevate your wardrobe!</p>
+                <p>Free shipping on orders over 1999 Rs. Shop now and elevate your wardrobe!</p>
                 <a href="">Shop Now</a>
             </div>
         `;
