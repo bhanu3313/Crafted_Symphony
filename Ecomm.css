@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-family: 'Playfair Display', serif;
+}
+
+nav i {
+    font-size: 25px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    transition: color 0.3s;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #f8183e;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+ul li a:hover::after {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 107px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main img {
+    width: 325px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.main p {
+    color: #121212;
+    margin-top: 22px;
+    max-width: 500px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main button {
+    width: 160px;
+    height: 45px;
+    background: linear-gradient(45deg, #f80f36, #d00e2c);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 22px;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.main button:hover {
+    background: linear-gradient(45deg, #d00e2c, #f80f36);
+    transform: scale(1.05);
+}
+
+.mainText {
+    margin-top: 74px;
+}
+
+.head {
+    text-align: center;
+    padding: 88px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.shopCard {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.shopCard:hover {
+    transform: scale(1.05);
+}
+
+.shopCard p {
+    margin-top: 11px;
+}
+
+.shopCard img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.shopCard button {
+    width: 90px;
+    height: 28px;
+    background: linear-gradient(45deg, #f71137, #d00e2c);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 11px;
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.3s;
+}
+
+.shopCard button:hover {
+    background: linear-gradient(45deg, #d00e2c, #f71137);
+}
+
+.arrival {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    background-color: #000;
+    color: #fff;
+    padding: 22px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.arrivalText {
+    padding: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.arrivalText p {
+    margin-top: 22px;
+}
+
+.arrivalText button {
+    margin-top: 22px;
+    width: 130px;
+    height: 35px;
+    background: linear-gradient(45deg, #f71137, #d00e2c);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.3s;
+}
+
+.arrivalText button:hover {
+    background: linear-gradient(45deg, #d00e2c, #f71137);
+}
+
+.arrival img {
+    width: 500px;
+    border-radius: 8px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.blogCard {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blogCard:hover {
+    transform: scale(1.05);
+}
+
+.blogCard a {
+    padding: 4px 22px;
+    font-size: 20px;
+    background-color: #f51137;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.blogCard a:hover {
+    background-color: #d00e2c;
+}
+
+.blogCard img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #000;
+    color: #fff;
+    border-top: 5px solid #f80e35;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #f80e35;
+}
+
+.text {
+    margin-top: 33px;
+}
+
+.text p {
+    margin-top: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.empty {
+    padding: 5px 22px;
+    font-size: 25px;
+    background-color: #f80e35;
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+    position: absolute;
+    top: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.detailCard {
+    width: 800px;
+    display: flex;
+    gap: 22px;
+    margin: auto;
+    margin-top: 66px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.detailCard img {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detailCard h1 {
+    margin-top: 11px;
+    font-family: 'Playfair Display', serif;
+}
+
+.detailCard p {
+    margin-top: 21px;
+}
+
+.detailCard a {
+    padding: 6px 22px;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    top: 33px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.detailCard a:hover {
+    background-color: #333;
+}
+
+@media screen and (max-width: 990px) {
+    .main {
+        display: block;
+        text-align: center;
+    }
+
+    .arrival {
+        display: block;
+        width: 80%;
+    }
+
+    .arrival img {
+        width: 100%;
+    }
+
+    .detailCard {
+        display: block;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .main h1 {
+        font-size: 33px;
+    }
+
+    .main img {
+        width: 90%;
+    }
+
+    .detailCard img {
+        width: 90%;
+    }
+}

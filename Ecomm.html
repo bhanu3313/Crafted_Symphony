@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafted Symphony</title>
+    <link rel="stylesheet" href="Ecomm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">     
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        function searchProducts() {
+            var input, filter, cards, card, i, txtValue;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            cards = document.querySelectorAll(".shopCard");
+    
+            cards.forEach(function(card) {
+                txtValue = card.textContent || card.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+    </script>
+    
+    <div id="signup" style="display: none;">
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Signup</button>
+        </form>
+    </div>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for products...">
+        <button onclick="searchProducts()">Search</button>
+    </div>
+    
+    
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Crafted Symphony</h1>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#arrival">New Arrivals</a></li>
+                <li><a href="#blog">Blogs</a></li>
+            </ul>
+            <i id="cart" class="fa-solid fa-cart-shopping"></i>
+        </nav>
+
+        <div class="main">
+            <div class="mainText">
+                <h1>Discover & Shop <br> The Trends at Crafted Symphony</h1>
+                <p>At Crafted Symphony, we believe that fashion is not just about what you wear;</p>
+                <p>it's about expressing yourself, embracing your individuality,</p>
+              
+                
+                <button>Explore</button>
+            </div>
+            <img src="D:\Hackathon_Phase2\Screenshot 2024-06-01 222310.jpg" alt="Main Image">
+        </div>
+
+        <div id="shop">
+            <div class="head">
+                <h1>Shop Now</h1>
+            </div>
+
+            <div class="shop">
+                <div class="shopCard">
+                    <img src="D:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.49.45.jpeg" alt="D:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.49.45.jpeg">
+                    <p>Trends at Crafted Symphony</p>
+                    <p>Only 2169 Rs</p>
+                    <button>View</button>
+                </div>
+                <div class="shopCard">
+                    <img src="d:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.49.46 (2).jpeg" alt="d:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.49.46 (2).jpeg">
+                    <p>Trends at Crafted Symphony</p>
+                    <p>Only 3199 Rs</p>
+                    <button>View</button>
+                </div>
+                <div class="shopCard">
+                    <img src="d:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.49.46.jpeg" alt="d:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.49.46.jpeg">
+                    <p>Trends at Crafted Symphony</p>
+                    <p>Only 3799 Rs</p>
+                    <button>View</button>
+                </div>
+                <div class="shopCard">
+                    <img src="D:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.53.12.jpeg" alt="D:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.53.12.jpeg">
+                    <p>Trends at Crafted Symphony</p>
+                    <p>Only 1999 Rs</p>
+                    <button>View</button>
+                </div>
+                <div class="shopCard">
+                    <img src="D:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.54.40.jpeg" alt="D:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.54.40.jpeg">
+                    <p>Trends at Crafted Symphony</p>
+                    <p>Only 2499 Rs</p>
+                    <button>View</button>
+                </div>
+                <div class="shopCard">
+                    <img src="D:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.56.34.jpeg" alt="D:\Hackathon_Phase2\WhatsApp Image 2024-06-01 at 21.56.34.jpeg">
+                    <p>Trends at Crafted Symphony</p>
+                    <p>Only 2222 Rs</p>
+                    <button>View</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="arrival">
+            <div class="head">
+                <h1>New Arrivals</h1>
+            </div>
+            <div class="arrival">
+                <img src="C:\Users\HP\Downloads\WhatsApp Image 2024-06-01 at 22.36.35.jpeg" alt="New Arrival">
+                <div class="arrivalText">
+                   <h1>Live with Trends</h1>
+                   Discover our latest additions, carefully curated to elevate your wardrobe.</p>
+            <p>From statement pieces to versatile essentials, find the perfect ensemble to express your style.</p>
+                   <button>Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="blog">
+            <div class="head">
+                <h1>Read Blogs</h1>
+            </div>
+            <div class="blogs">
+                <div class="blogCard">
+                    <img src="C:\Users\HP\Downloads\WhatsApp Image 2024-06-01 at 22.44.07 (1).jpeg" alt="Blog 1">
+                   <h3>Latest Blogs on Trends</h3>
+                    <a target="_blank" href="https://www.hellofashionblog.com/">Read Blogs</a>
+                </div>
+
+                <div class="blogCard">
+                    <img src="C:\Users\HP\Downloads\WhatsApp Image 2024-06-01 at 22.44.07.jpeg" alt="Blog 2">
+                   <h3>Latest Blogs on Trends</h3>
+                    <a target="_blank" href="https://www.hellofashionblog.com/">Read Blogs</a>
+                </div>
+                <div class="blogCard">
+                    <img src="C:\Users\HP\Downloads\WhatsApp Image 2024-06-01 at 22.44.41.jpeg" alt="Blog 3">
+                   <h3>Latest Blogs on Trends</h3>
+                    <a target="_blank" href="https://www.hellofashionblog.com/">Read Blogs</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="text">
+                <h3>About Us</h3>
+                <p>Explore our handpicked selection of timeless classics and contemporary pieces,</p>
+                <p>each designed to harmonize seamlessly with your personal style.</p>
+                <p>From sophisticated ensembles for special occasions</p>
+                <p>to casual chic attire for everyday elegance,</p>
+                <p>we have something for every moment and mood.</p>
+                
+            </div>
+            <div class="text">
+                <h3>Product</h3>
+                <p>Quality</p>
+                <p>Fabric</p>
+                <p>Best</p>
+                <p>Affordable</p>
+            </div>
+            <div class="text">
+                <h3>Price</h3>
+                <p>Offer</p>
+                <p>Lowest</p>
+                <p>New Arrival</p>
+                <p>Return</p>
+            </div>
+            <div class="text">
+                <h3>Connect With Us</h3>
+                <p>Twitter</p>
+                <p>Facebook</p>
+                <p>LinkedIn</p>
+                <p>YouTube</p>
+            </div>
+        </div>
+    </div>
+    <script src="Ecomm.js"></script>
+</body>
+</html>
